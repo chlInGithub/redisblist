@@ -11,3 +11,4 @@ redis阻塞队列执行器
 检查机制，高可用；
 记录处理失败的数量；
 
+https://blog.csdn.net/chl87783255/article/details/117925291
