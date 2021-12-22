@@ -204,7 +204,10 @@ public class RedisBlockListExecutor {
 
         // 上下文
         worker.thread = thread;
-        workers.add(worker);
+
+        synchronized (workers) {
+            workers.add(worker);
+        }
 
         // 启动线程
         thread.start();
